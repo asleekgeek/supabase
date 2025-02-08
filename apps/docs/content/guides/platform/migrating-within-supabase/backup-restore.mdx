@@ -4,23 +4,6 @@ subtitle: 'Learn how to backup and restore projects using the Supabase CLI'
 breadcrumb: 'Migrations'
 ---
 
-## Before you begin
-
-<Accordion
-  type="default"
-  openBehaviour="multiple"
-  chevronAlign="right"
-  justified
-  size="medium"
-  className="text-foreground-light mt-8 mb-6"
->
-  <div className="border-b mt-3 pb-3">
-    <AccordionItem header="Install Postgres and psql" id="install-postgres">
-      <PostgresInstallation />
-    </AccordionItem>
-  </div>
-</Accordion>
-
 ## Backup database using the CLI
 
 <StepHikeCompact>
@@ -40,7 +23,7 @@ breadcrumb: 'Migrations'
     <StepHikeCompact.Details title="Get the new database connection string" fullWidth>
       Go to the [project page](/dashboard/project/_/) and click the "**Connect**" button at the top of the page for the connection string.
 
-      <Admonition type="info">
+      <Admonition type="note">
         Use the Session pooler connection string by default. If your ISP supports IPv6, use the direct connection string.
       </Admonition>
 
@@ -87,6 +70,23 @@ breadcrumb: 'Migrations'
 
 </StepHikeCompact>
 
+## Before you begin
+
+<Accordion
+  type="default"
+  openBehaviour="multiple"
+  chevronAlign="right"
+  justified
+  size="medium"
+  className="text-foreground-light mt-8 mb-6"
+>
+  <div className="border-b mt-3 pb-3">
+    <AccordionItem header="Install Postgres and psql" id="install-postgres">
+      <PostgresInstallation />
+    </AccordionItem>
+  </div>
+</Accordion>
+
 ## Restore backup using CLI
 
 <StepHikeCompact>
@@ -111,7 +111,7 @@ breadcrumb: 'Migrations'
       <StepHikeCompact.Details title="Get the new database connection string" fullWidth>
         Go to the [project page](/dashboard/project/_/) and click the "**Connect**" button at the top of the page for the connection string.
 
-      <Admonition type="info">
+      <Admonition type="note">
         Use the Session pooler connection string by default. If your ISP supports IPv6, use the direct connection string.
       </Admonition>
 
